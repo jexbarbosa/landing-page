@@ -115,7 +115,6 @@ section {
   height: 560px;
   background-size: cover;
   background-image: url("../images/ralfjones.gif");
-  background-repeat: no-repeat;
   background-attachment: fixed;
   border-top: 1px solid #534daf80;
   border-bottom: 1px solid #534daf80;
