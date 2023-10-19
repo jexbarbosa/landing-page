@@ -29,10 +29,6 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
   background-size: auto;
   background-repeat: no-repeat;
-  display: grid;  
-    grid-gap: 5px;  
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 100px); 
   height: 600px;
   padding-top: 60px;
   border-bottom: 1px solid #3f3a8180;
@@ -97,11 +93,7 @@ section {
 
 #course-content .modules-list {
   margin: 24px 0;
-  display: grid;  
-    grid-gap: 5px;  
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 100px); 
-}
+  }
 
 #course-content .modules-list .module {
   color: white;
