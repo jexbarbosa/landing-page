@@ -26,7 +26,7 @@ section {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png') max-width: 100% overflow-clip-margin: content-box overflow: clip;
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -111,7 +111,8 @@ section {
 }
 
 #transform-world {
-  height: 560px;
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-image: url("../images/ralfjones.gif");
   background-attachment: fixed;
