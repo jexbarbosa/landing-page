@@ -1,5 +1,11 @@
 @import url('reset.css');
 
+/* Remover espaço em branco lateral no Mobile */
+html, body {
+  overflow-x: hidden !important;
+}
+  
+
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
