@@ -6,6 +6,7 @@
 
 body {
   background-color: #050506;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -27,7 +28,7 @@ section {
 
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
   padding-top: 60px;
@@ -112,8 +113,9 @@ section {
 
 #transform-world {
   height: 560px;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../images/ralfjones.gif");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   border-top: 1px solid #534daf80;
   border-bottom: 1px solid #534daf80;
