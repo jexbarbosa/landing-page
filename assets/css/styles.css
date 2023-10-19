@@ -27,7 +27,7 @@ section {
 
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 600px;
   padding-top: 60px;
@@ -112,9 +112,9 @@ section {
 
 #transform-world {
   height: 560px;
-  background-size: cover;
+  background-size: contain;
   background-image: url("../images/ralfjones.gif");
-  background-attachment: inherit;
+  background-attachment: fixed;
   border-top: 1px solid #534daf80;
   border-bottom: 1px solid #534daf80;
   padding: 200px;
