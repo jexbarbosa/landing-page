@@ -1,10 +1,7 @@
 @import url('reset.css');
 
-* {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
+  font-family: 'Segoe UI';
   background-color: #050506;
 }
 
@@ -25,14 +22,43 @@ section {
   margin: 100px auto;
 }
 
-.banner {
+.banner::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-image: url('../images/banner.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
-  padding-top: 60px;
+  opacity: .3;
   border-bottom: 1px solid #3f3a8180;
 }
+
+@media(max-width: 500px) {
+			header {
+				background-size: contain;
+      }
+}
+
+  @media(min-width: 501px) {
+            header {
+                height: 205px;
+            }
+        }
+
+        @media(min-width: 992px) {
+            header {
+                height: 405px;
+            }
+        }
+
+        @media(min-width: 1200px) {
+            header {
+                height: 605px;
+            }
+        }
 
 .banner .banner-content {
   color: white;
@@ -97,7 +123,7 @@ section {
 
 #course-content .modules-list .module {
   color: white;
-  width: 530px;
+  width: 100%;
   margin: 0 auto 24px;
   border: 1px solid #3f3a81;
   background-color: #1c1d1e;
@@ -106,20 +132,32 @@ section {
   box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
 }
 
+ @media(min-width: 768px) {
+            .module {
+                width: 530px;
+                border-radius: 100px;
+            }
+        }
+
 #course-content .modules-list .module span {
   color: #3f3a81;
 }
 
 #transform-world {
-  height: 100%;
   width: 100%;
   background-size: cover;
   background-image: url("../images/ralfjones.gif");
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   border-top: 1px solid #534daf80;
   border-bottom: 1px solid #534daf80;
-  padding: 200px;
+  padding: 80px 0;
 }
+
+@media(min-width: 501px) {
+            .transform-world {
+                padding: 200px;
+            }
+		}
 
 #transform-world p {
   font-weight: 900;
@@ -128,6 +166,12 @@ section {
   max-width: 250px;
   text-shadow: 3px 2px #534daf;
 }
+
+ @media(min-width: 501px) {
+            .transform-world span {
+                font-size: 2rem;
+            }
+        }
 
 #maratonas-concluidas {
   text-align: center;
@@ -146,10 +190,15 @@ footer {
   border-top: 1px solid #534daf80;
 }
 
-footer .dio-logo {
+footer .jex-logo {
   width: 300px;
-  overflow-y: hidden;
-}
+  }
+
+@media (max-width: 500px) {
+            .jex-logo {
+				max-width: 50%;
+            }
+		}
 
 footer a {
   color: #534daf;
